@@ -61,9 +61,8 @@ router.post("/register", async (req, res) => {
         try{
             const savedPost= await newDriver.save();
 
-
-           res.send("Success")
-           res.status(200)
+            res.send({ message: "Success", success: true });
+            res.status(200)
       }catch(err){
        res.send(err);
       }
@@ -82,18 +81,17 @@ const idExist = await Driver.findOne({
 try{
 
 if (!idExist){
-    
-    return res.status(400).send("not-loggedin");
+    return res.status(301).send({ message: "not-loggedin", success: false });
 }else{
     
-const token = await jwt.sign({ id: Driver._id }, process.env.TOKEN_SECRET,{
+const token = await jwt.sign({ id: idExist._id }, process.env.TOKEN_SECRET,{
 
     expiresIn:process.env.JWT_EXPIRE,
 
 });
 
 res.send({token});
-res.status(200);	
+res.status(200); 
 }
 
 }catch (err){
