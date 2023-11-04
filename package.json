@@ -1,0 +1,23 @@
+{
+  "name": "safemyjourney-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hackout2023-SafeMyJourney/SafeMyJourney-Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hackout2023-SafeMyJourney/SafeMyJourney-Backend/issues"
+  },
+  "homepage": "https://github.com/Hackout2023-SafeMyJourney/SafeMyJourney-Backend#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node": "^21.1.0"
+  }
+}
