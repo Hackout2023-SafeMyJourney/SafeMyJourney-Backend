@@ -69,6 +69,7 @@ router.post("/register", async (req, res) => {
                res.status(200)
           }catch(err){
            res.send(err);
+           res.status(301);
           }
      
 });

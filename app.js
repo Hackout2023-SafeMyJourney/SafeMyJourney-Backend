@@ -27,10 +27,12 @@ mongoose.connect(
 //import routes
 const DriverRoute = require("./routes/Driver");
 const PassangerRoute = require("./routes/Passanger");
+const RideRoute=require("./routes/Rides")
 
 //middleware
 app.use("/driver", DriverRoute);
 app.use("/passanger", PassangerRoute);
+app.use("/rides",RideRoute);
 
 app.set('view engine', 'ejs');
 app.use(express.static("public"))

@@ -41,7 +41,7 @@ router.get('/',(req,res)=>{
 //get all drivers
 
 //get specific driver details
-
+router.get("")
 //update driver details
 
 //New registreation ;
@@ -101,6 +101,33 @@ res.status(200);
 }
 
 })
+
+//New Update  ;
+router.post("/register", async (req, res) => {
+
+    const newDriver = new Driver({
+            Name: req.body.name,
+            Mobile:req.body.mobile,
+            Age: req.body.age,
+            Gender:req.body.gender,
+            Email_Id:req.body.email,
+            Cab_No:req.body.cab_no,
+            Aadhar_No:req.body.aadhar_no,
+            Password:req.body.password
+        })
+        
+        try{
+            const savedPost= await newDriver.save();
+
+
+           res.send("Success")
+           res.status(200)
+      }catch(err){
+       res.send(err);
+      }
+ 
+});
+
 
 
 
