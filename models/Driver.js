@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const passangerSchema = new mongoose.Schema({
+const DriverSchema = new mongoose.Schema({
   Name: {
     type: String,
     required: true,
@@ -21,18 +21,26 @@ const passangerSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  nomini_name: {
-    type: String,
-    required: true,
-  },
-  nomini_Mobile: {
-    type: String,
-    required: true,
-  },
   Password: {
     type: String,
     required: true,
   },
+  Profile_Image:{
+    type:String,
+    required:true,
+  },
+  QR_Image:{
+    type:String,
+    required:true,
+  },
+  Cab_No:{
+    type:String,
+    required:true,
+  },
+  Aadhar_No:{
+    type:String,
+    required:true,
+  }
 });
 
-module.exports = mongoose.model("Passanger", passangerSchema);
+module.exports = mongoose.model("Driver", DriverSchema);
