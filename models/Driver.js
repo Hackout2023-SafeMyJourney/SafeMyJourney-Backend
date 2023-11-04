@@ -25,14 +25,6 @@ const DriverSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  Profile_Image:{
-    type:String,
-    required:true,
-  },
-  QR_Image:{
-    type:String,
-    required:true,
-  },
   Cab_No:{
     type:String,
     required:true,
