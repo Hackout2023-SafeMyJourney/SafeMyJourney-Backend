@@ -33,7 +33,9 @@ const router = express.Router();
 const upload=multer({dest:'uploads/'});
 
 
-
+router.get('/',(req,res)=>{
+    res.send("Driver")
+})
 
 
 
