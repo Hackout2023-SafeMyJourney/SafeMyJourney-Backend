@@ -1,6 +1,6 @@
 const bodyParser = require("body-parser");
 const express = require("express");
-const Post=require('../models/Driver');
+const Driver=require('../models/Driver');
 const jwt = require('jsonwebtoken');
 const verify=require('./JwtVerify');
 const multer =require('multer');
