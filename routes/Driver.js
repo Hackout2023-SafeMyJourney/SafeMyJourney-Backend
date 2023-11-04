@@ -41,8 +41,19 @@ router.get('/',(req,res)=>{
 //get all drivers
 
 //get specific driver details
-
+router.get("")
 //update driver details
+
+router.get("/getdriver",async(req,res)=>{
+    console.log(req.body.id);
+
+    var DriverDetails=await Driver.findById(req.body.id);
+    console.log(DriverDetails)
+    res.send(DriverDetails)
+    
+
+
+})
 
 //New registreation ;
 router.post("/register", async (req, res) => {
@@ -99,6 +110,8 @@ res.status(200);
 }
 
 })
+
+
 
 
 
