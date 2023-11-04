@@ -2,7 +2,7 @@ const bodyParser = require("body-parser");
 const express = require("express");
 const Passanger=require('../models/Passanger');
 const jwt = require('jsonwebtoken');
-const verify=require('./DriverJwtVerify');
+const verify=require('./PassangerJwtVerify');
 const multer =require('multer');
 const formidable = require("formidable");
 const  fs=require('fs');
@@ -37,6 +37,14 @@ const upload=multer({dest:'uploads/'});
 router.get('/',(req,res)=>{
     res.send("passasnger")
 })
+
+
+//get all passangers
+
+//get specific passanger details
+
+//update passanger details
+
 
 
 //New registreation ;

@@ -38,6 +38,12 @@ router.get('/',(req,res)=>{
 })
 
 
+//get all drivers
+
+//get specific driver details
+
+//update driver details
+
 //New registreation ;
 router.post("/register", async (req, res) => {
 
