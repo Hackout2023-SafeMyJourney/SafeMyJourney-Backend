@@ -42,6 +42,16 @@ router.get('/',(req,res)=>{
 //get all passangers
 
 //get specific passanger details
+router.get("/getpassanger",async(req,res)=>{
+    console.log(req.body.id);
+
+    var PassangerDetails=await Passanger.findById(req.body.id);
+    console.log(PassangerDetails)
+    res.send(PassangerDetails)
+    
+
+
+})
 
 //update passanger details
 
