@@ -1,7 +1,7 @@
 const bodyParser = require("body-parser");
 const express = require("express");
 const Rides=require('../models/RideList');
-const Rides=require('../models/Passanger');
+const Passanger=require('../models/Passanger');
 const Driver=require('../models/Driver');
 const jwt = require('jsonwebtoken');
 const multer =require('multer');
