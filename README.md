@@ -17,7 +17,7 @@
 
 Welcome to the SaveMyJourney GitHub repository! SaveMyJourney is a safety application designed for travelers, with a focus on passengers using cabs and rickshaws. The primary objective of this application is to enhance the interaction between drivers and passengers through a unique QR code system. Passengers can easily scan the QR code, enter their source and destination, and track their ride in real-time. SaveMyJourney also includes a feature for unregistered cabs to address potential safety concerns.
 
-⚠️ **Declaration**: Some of the UI components, such as the header and login functionality, have been reused from previous projects. The remainder of the application was developed during this hackathon.
+⚠️ **Declaration**: Login functionality, have been reused from previous projects. The remainder of the application was developed during this hackathon.
 
 ## 2. Demo
 
