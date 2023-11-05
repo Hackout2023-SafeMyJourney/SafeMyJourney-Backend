@@ -25,14 +25,14 @@ const DriverSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  Cab_No:{
-    type:String,
-    required:true,
+  Cab_No: {
+    type: String,
+    required: true,
   },
-  Aadhar_No:{
-    type:String,
-    required:true,
-  }
+  Aadhar_No: {
+    type: String,
+    required: true,
+  },
 });
 
 module.exports = mongoose.model("Driver", DriverSchema);
