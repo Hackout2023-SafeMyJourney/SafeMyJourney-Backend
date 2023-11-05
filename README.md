@@ -10,7 +10,6 @@
 6. [Getting Started](#getting-started)
 7. [Usage](#usage)
 8. [Contributing](#contributing)
-9. [Contributing](#contributing)
 
 ---
 
